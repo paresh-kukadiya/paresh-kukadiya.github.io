@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Penetration Testing Methodology</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    h1 {
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #3498db;
+      padding-left: 15px;
+      margin-left: 0;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Understanding Penetration Testing Methodology</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    Penetration testing methodologies serve as structured frameworks that guide security professionals in conducting effective and repeatable penetration tests. Acting like a blueprint or recipe, these methodologies ensure consistent results, help maintain quality, and provide a common language and process for testers and stakeholders.
+  </p>
+
+  <h2>Popular Penetration Testing Methodologies</h2>
+
+  <h3>1. OSSTMM – Open-Source Security Testing Methodology Manual</h3>
+  <ul>
+    <li>Created by ISECOM, last updated in 2010</li>
+    <li>Focuses on scientific and operational approaches</li>
+    <li>Includes channel testing, trust metrics, and adaptable guides</li>
+  </ul>
+  <blockquote>
+    “This manual provides test cases that result in verified facts… By using OSSTMM you no longer have to rely on general best practices, anecdotal evidence, or superstitions.”
+  </blockquote>
+
+  <h3>2. OWASP – Open Worldwide Application Security Project</h3>
+  <ul>
+    <li>Nonprofit foundation for improving software security</li>
+    <li>Famous for OWASP Top 10: a list of common web app vulnerabilities</li>
+    <li>Key tools: WSTG (Web Security Testing Guide), ASVS</li>
+    <li>Covers: web, mobile, API, and IoT testing</li>
+  </ul>
+
+  <h3>3. PTES – Penetration Testing Execution Standard</h3>
+  <ul>
+    <li>Created by global experts, last updated in 2014</li>
+    <li>Seven core phases: from pre-engagement to reporting</li>
+    <li>Offers PTES Technical Guidelines for tools and techniques</li>
+  </ul>
+
+  <h3>4. CREST – Council for Registered Ethical Security Testers</h3>
+  <ul>
+    <li>International certification and accreditation body</li>
+    <li>Recognized for high-quality security testing</li>
+    <li>Relevant for compliance and European markets</li>
+  </ul>
+
+  <h2>General Penetration Testing Phases</h2>
+
+  <h3>1. Intelligence Gathering (Reconnaissance)</h3>
+  <p>
+    Discover services, ports, and technologies. Tools like <code>Nmap</code>, <code>Masscan</code>, and <code>Amass</code> are commonly used to build a profile of the target.
+  </p>
+
+  <h3>2. Threat Modeling</h3>
+  <p>
+    Identify attack paths and risks based on the information gathered. Different environments (e.g., a bank lobby vs. a parking lot ATM) have unique threat models.
+  </p>
+
+  <h3>3. Vulnerability Analysis</h3>
+  <p>
+    Analyze systems for known vulnerabilities using tools like <code>Exploit-DB</code> and <code>Metasploit</code>.
+  </p>
+
+  <h3>4. Exploitation</h3>
+  <p>
+    Attempt to compromise systems using identified vulnerabilities. Demonstrates the real-world impact of discovered flaws.
+  </p>
+
+  <h3>5. Post Exploitation</h3>
+  <ul>
+    <li>Data exfiltration</li>
+    <li>Lateral movement</li>
+    <li>Privilege escalation (e.g., root, admin, NT Authority)</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    Penetration testing methodologies like OSSTMM, OWASP, PTES, and CREST provide reliable structures for effective testing. Each has its own strengths depending on the focus—network, application, compliance, or process maturity.
+  </p>
+  <p><strong>Call to Action:</strong> Start by exploring PTES and OSSTMM, and gradually incorporate OWASP and CREST resources as you grow. Use the repeatable process to improve your accuracy, efficiency, and confidence in real-world pentests.</p>
+
+</body>
+</html>
